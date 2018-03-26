@@ -1,4 +1,14 @@
-os: osx
+matrix:
+  include:
+    - os: linux
+      sudo: required
+      before_install:
+          - sudo apt-get update && sudo apt-get install linuxbrew-wrapper -y
+          - brew update
+          - brew --env
+          - brew config
+    - os: osx
+
 before_install:
   - brew update
   - brew --env
