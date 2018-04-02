@@ -2,6 +2,8 @@
 
 # Very handy package testing script from https://github.com/linuxkit/homebrew-linuxkit
 
+set -e
+
 PKGS="$(find Formula -iname "*.rb" -exec sh -c 'FORMULA={}; basename ${FORMULA%.*}' \;)"
 
 for pkg in ${PKGS}; do

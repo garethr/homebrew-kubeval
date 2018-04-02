@@ -1,5 +1,13 @@
-os: osx
+matrix:
+  include:
+    - os: linux
+      dist: trusty
+      sudo: required
+      env: PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
+    - os: osx
+
 before_install:
+  - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then sh -c "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install.sh)"; fi
   - brew update
   - brew --env
   - brew config
