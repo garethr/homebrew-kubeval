@@ -7,8 +7,10 @@ class Kubeval < Formula
 
   bottle :unneeded
 
+  option "with-short-name", "link as kval instead"
+
   def install
-    bin.install "kubeval"
+    bin.install "kubeval" => build.with?("short-name") ? "kval" : "kubeval"
   end
 
   test do
