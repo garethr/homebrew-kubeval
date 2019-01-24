@@ -1,9 +1,9 @@
 class Kubeval < Formula
   desc "Validate your Kubernetes configurations"
   homepage "https://github.com/garethr/"
-  url "https://github.com/garethr/kubeval/releases/download/0.7.1/kubeval-darwin-amd64.tar.gz"
-  sha256 "0E9FBC4495CE048936F6A535A48DB9F1164404DE68B7A04EB806A0FCA7212485".downcase
-  version "0.7.1"
+  url "https://github.com/garethr/kubeval/releases/download/0.7.3/kubeval-darwin-amd64.tar.gz"
+  sha256 "efb298bfea2b78a19db559eab620e0318c6a22a9b975d2756221b9fed16f709c".downcase
+  version "0.7.3"
 
   bottle :unneeded
 
