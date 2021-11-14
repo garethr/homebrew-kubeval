@@ -5,8 +5,6 @@ class Kubeval < Formula
   sha256 "d7a31879e5622ece560167c3f923dcf784636215a42eae98624d37d53bd661fd".downcase
   version "0.8.1"
 
-  bottle :unneeded
-
   def install
     bin.install "kubeval"
   end
